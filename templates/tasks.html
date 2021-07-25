@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>i m extending!</h2>
+    {% for task in tasks %}
+        {{ task.time }}<br>
+        {{ task.from_date }}<br>
+        {{ task.due_date }}<br>
+    {% endfor %}
+
+    {% endblock %}
