@@ -13,6 +13,32 @@
 </head>
 <body>
 
+<header>
+    <!---->
+    <nav class="nav-extended, deep-purple darken-1">
+        <div class="nav-wrapper">
+            <a href="{{ url_for('get_tasks') }}" class="brand-logo">Task Manager</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fad fa-bars"></i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="{{ url_for('get_tasks') }}">HOME</a></li>
+                <li><a href="#">DAY OFF / HOLIDAY</a></li>
+                <li><a href="#">MY MESSAGES</a></li>
+                <li><a href="#">LOG OUT</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Mobile Sidenav -->
+      <ul class="sidenav" id="mobile-demo">
+          <h4 class="center-align lime accent-1">Task Manager</h4>
+        <li><a href="{{ url_for('get_tasks') }}">HOME</a></li>
+        <li><a href="#">DAY OFF / HOLIDAY</a></li>
+        <li><a href="#">MY MESSAGES</a></li>
+        <li><a href="#">LOG OUT</a></li>
+      </ul>
+              
+</header>
+
 {% block content %}
 {% endblock %}
 
